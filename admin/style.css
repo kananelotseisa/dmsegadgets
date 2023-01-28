@@ -1,0 +1,377 @@
+body{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*main container*/
+body .container{
+    color: white;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body .container .side{
+    width: 15%;
+    height: 100%;
+}
+body .container .side2{
+    width: 25%;
+    height: 100%;
+    
+}
+/*menu side css*/
+body .container .side{
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+body .container .side .cont{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body .container .side .cont .top img{
+width: 100%;
+height:auto;
+}
+body .container .side .cont .top div{
+    display: flex;
+    justify-content: center;
+}
+body .container .side .cont .top div .dp{
+    margin-top: 10px;
+    width: 60%;
+height:auto;
+}
+
+body .container .side .cont .mid button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background:linear-gradient(90deg,#e84702,#ff7913,#a01a02);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+body .container .side .cont .bottom button{
+    width: 100%;
+    height: 40px;
+    background:linear-gradient(90deg,#104b85,#10E3AE,#431E68);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+body .container .side .cont button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*main div css*/
+body .container .main{
+    width: 57%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body .container .main .top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body .container .main .top .wrapp {
+    
+    width: 96%;
+    height: 100%;
+}
+
+body .container .main .top .wrapp h1{
+    margin-block-start: 10px;
+}
+
+body .container .main .top .wrapp .cards{
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body .container .main .top .wrapp .cards .carduser{
+    width: 230px;
+    height: 100%;
+    background-image: url("../images/card_users1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .container .main .top .wrapp .cards .cardmoney{
+    width: 230px;
+    height: 100%;
+    background-image: url("../images/card_money1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .container .main .top .wrapp .cards .cardpoints{
+    width: 230px;
+    height: 100%;
+    background-image: url("../images/card_points1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .container .main .bottom{
+    width: 100%;
+    height: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*notification side css*/
+body .container .side2{
+    border-radius: 0px 16px 16px 0px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body .container .side2 h1{
+    text-align: left;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+body .container .side2 table{
+    width: 94%;
+    margin: 0px 10px;
+    background: none;
+}
+body .container .side2 table .info{
+    margin-block-start: 10px;
+    padding: 5px 0px;
+    height: 27px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(2px);
+}
+
+body .container .side2 table .id{
+    width: 60px;
+    font-size: 14px;
+    padding-left: 6px;
+    color: #04f2f9;
+}
+body .container .side2 table .name{
+width: 40%;
+padding-left: 12px;
+font-size: 14px;
+}
+
+body .container .side2 table .operation{
+    width: 130px;
+    display: flex;
+    height: 27px;
+    align-items: center;
+}
+body .container .side2 table .operation button,
+body .container .side2 table .operation .delete{
+    width: 58px;
+    background:linear-gradient(90deg,#04f2f9,#104b85);
+    border: none;
+    height: 21px;
+    color: white;
+    border-radius: 10px;
+}
+
+body .container .side2 table .operation .delete{
+    background:linear-gradient(90deg,orange,rgb(255, 38, 0));
+    margin-left: 5px;
+}
+/*floating div: add stock*/
+body #floatstock{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 2, 11, 0.5);
+    transition: 0.4s ease-in-out;
+}
+
+body #floatstock .container{
+    position: relative;
+    width: 370px;
+    height: 340px;
+    background-color: #0b0b0b;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+body #floatstock .container::before{
+    content: '';
+    position: absolute;
+    width: 370px;
+    top: -50%;
+    left: -50%;
+    height: 340px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#ff017f ,#ff017f);
+    animation: animate 6s linear infinite;
+}
+
+body #floatstock .container::after{
+    content: '';
+    position: absolute;
+    width: 370px;
+    top: -50%;
+    left: -50%;
+    height: 340px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#04f2f9,#04f2f9);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+body #floatstock .container .form{
+    inset: 2px;
+    background-color: black;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 2;
+    padding: 0px 30px;
+}
+
+body #floatstock .container .form #button{
+    color: orange;
+    font-size: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px 10px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    cursor: pointer;
+}
+
+body #floatstock .container .form #button:hover{
+    border-radius: 36%;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.071);
+}
+
+body #floatstock .container .form .head{
+    font-size: 30px;
+    color: #04f2f9;
+}
+
+body #floatstock .container .form .warning{
+    position: absolute;
+    top: 38px;
+    color: greenyellow;
+}
+
+body #floatstock .container .form .warning2{
+    position: absolute;
+    top: 38px;
+    color: red;
+}
+
+body #floatstock .container .form form div{
+    display:flex;
+    margin-bottom: 20px;
+}
+body #floatstock .container .form form div label{
+    font-size: 16px;
+    margin-block-start: 3px;
+}
+body #floatstock .container .form form div input{
+    width: 100%;
+    border: none;
+    color: #04f2f9;
+    border-bottom: 1px solid #6d6d6d;
+    background: transparent;
+}
+body #floatstock .container .form form div input:focus{
+    outline: none;
+    border-bottom: 1px #04f2f9 solid;
+}
+
+body #floatstock .container .form form .nums{
+display: flex;
+justify-content: space-between;
+margin-bottom: 3px;
+}
+
+body #floatstock .container .form form .nums input{
+    width: 60px;
+    color: #04f2f9;
+    border: none;
+    border-bottom: 1px solid #6d6d6d;
+}
+
+body #floatstock .container .form form .nums input:focus{
+    outline: none;
+    border-bottom: 1px #04f2f9 solid;
+}
+
+body #floatstock .container .form form .icon{
+border-bottom: none;
+margin-top: 10PX;
+}
+
+body #floatstock .container .form form .button input{
+    border-bottom: none;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 10px;
+    background:linear-gradient(90deg,#104b85,#10E3AE,#431E68);
+}
+/*key frames*/
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

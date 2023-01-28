@@ -1,0 +1,143 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url('../images/login_background.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100vh
+}
+
+main .form{
+    width: 330px;
+    height: 330px;
+    background: rgb(15, 15, 15);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .form::before{
+    content: '';
+    position: absolute;
+    width: 330px;
+    top: -50%;
+    left: -50%;
+    height: 330px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#ff017f ,#ff017f);
+    animation: animate 6s linear infinite;
+}
+
+main .form::after{
+    content: '';
+    position: absolute;
+    width: 330px;
+    top: -50%;
+    left: -50%;
+    height: 330px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#04f2f9,#04f2f9);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+
+main .form .container{
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background-color: black;
+    z-index: 10;
+
+    padding: 0px 20px;
+}
+
+main .form .container .logo{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .form .container .logo img{
+    height: 30px;
+}
+
+main .form .container h3{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+main .form .container form input{
+width: 100%;
+height: 30px;
+margin-top: 10px;
+color: orange;
+background-color: black;
+padding: 0px 10px;
+border: none;
+border-radius: 3px;
+border-bottom: 1px solid rgb(98, 98, 98);
+}
+main .form .container form input:focus{
+    border-bottom: 1px solid orange;
+    outline: none;
+}
+
+main .form .container form img{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+main .form .container form  #img1a{
+    display: none;
+}
+
+main .form .container form  #img1,#img1a{
+    margin-top: 15px;
+    right: 30px;
+    position: absolute;
+}
+
+main .form .container form .loginbtn{
+    background:linear-gradient(90deg,orange,rgb(255, 77, 0));
+    border-bottom: none;
+    color: white;
+    margin-top: 40px;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+
+main .form .container form .loginbtn:hover{
+    border:2px solid rgb(255, 77, 0);
+    background-color: black;
+}
+
+main .form .container form .registerbtn a{
+    color: orange;
+    font-size: 15px;
+}
+
+main .form .container .error{
+    color:red;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+/*key frames*/
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('../images/nav.png');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body header nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-around;
+}
+body header nav img{
+    height: 46px;
+    width: auto;
+}
+
+body header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body header nav ul li{
+    padding: 10px;
+    list-style: none;
+}
+body header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+body header nav ul li a:hover{
+    color: orange;
+}
+body header nav .button{
+    color: white;
+    text-decoration: none;
+}
+body header nav p{
+  color: white;
+}
+.btn {
+    width: 130px;
+    margin: 0 20px;
+    padding: 5px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(246, 136, 2, 0.1);
+    position: relative;
+  }
+  
+  .btn a {
+    color: orange;
+    font-weight: 200;
+    font-size: 14px;
+    background:none;
+    text-decoration: none;
+  }
+  
+  .BorderTopBottom:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    top: 0px;
+    left: 0px;
+    background: orange;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderTopBottom:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    bottom: 0px;
+    right: 0px;
+    background: orange;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRight:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1px;
+    height: 15px;
+    background: orange;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRight:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 1px;
+    height: 15px;
+    background: orange;
+    transition: all 0.5s ease;
+  }
+  
+  .btn:hover .BorderTopBottom:before,
+  .btn:hover .BorderTopBottom:after {
+    width: 130px;
+    transition: all 0.5s ease;
+  }
+  
+  .btn:hover .BorderLeftRight:before,
+  .btn:hover .BorderLeftRight:after {
+    height: 27px;
+    transition: all 0.5s ease;
+  }
+  /*nav 2*/
+  body header nav .search{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid orange;
+  }
+
+  body header nav .search input,
+  body header nav .search button{
+    height: 100%;
+  }
+  body header nav .search input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: orange;
+    padding: 0px 20px;
+  }
+
+  body header nav .search input::placeholder{
+    color: #05F6FD;
+  }
+
+  body header nav .search button{
+    background-color: orange;
+    border: none;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+  }
+
+  body header nav .cart{
+    position: relative;
+  }
+  body header nav .cart .value{
+    position: absolute;
+    color: orange;
+    font-size: 16px;
+    left: 40%;
+    top: -10px;
+  }
+  body header nav .cart img{
+    height: 30px;
+    width: auto;
+  }
+
+  /*buttons*/
+.registerbtn {
+  width: 130px;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(7, 185, 255, 0.1);
+  position: relative;
+}
+
+.registerbtn a {
+  color: rgb(7, 185, 255);
+  font-weight: 200;
+  font-size: 14px;
+  background:none;
+  text-decoration: none;
+}
+
+.Border-TopBottom:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  top: 0px;
+  left: 0px;
+  background: rgb(7, 185, 255);
+  transition: all 0.5s ease;
+}
+
+.Border-TopBottom:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  bottom: 0px;
+  right: 0px;
+  background: rgb(7, 185, 255);
+  transition: all 0.5s ease;
+}
+
+.Border-LeftRight:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1px;
+  height: 15px;
+  background: rgb(7, 185, 255);
+  transition: all 0.5s ease;
+}
+
+.Border-LeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 1px;
+  height: 15px;
+  background: rgb(7, 185, 255);
+  transition: all 0.5s ease;
+}
+
+.registerbtn:hover .Border-TopBottom:before,
+.registerbtn:hover .Border-TopBottom:after {
+  width: 130px;
+  transition: all 0.5s ease;
+}
+
+.registerbtn:hover .Border-LeftRight:before,
+.registerbtn:hover .Border-LeftRight:after {
+  height: 27px;
+  transition: all 0.5s ease;
+}
